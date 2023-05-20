@@ -8,7 +8,7 @@ print('Welcome to Cohort 2 Asset management consult plc')
 username = input('Enter your name: ')
 amount = input('Enter Investment Amount: ')
 print("Thanks", username, "for investing with us! Your Commission is underway")
-time.sleep(1*30)
+time.sleep(1*15)
 
 timenow = datetime.datetime.now()
 td = datetime.timedelta(seconds=24 * 60 * 60)
@@ -21,18 +21,18 @@ def percentage_increase():
     print('Your commssion is', commission)
     print(username,'congratulations your Capital is:',total)
 
-    time.sleep(1*30)
+    time.sleep(1*15)
 
  # While loop for infinite execution at every time.sleep(time)
     while True:
         timenow = td
-        if timenow.seconds == 0 * 1 * 30:
+        if timenow.seconds == 0 * 1 * 15:
             commission_roll = total * 0.1
             total = total * 1.1
             print(time.strftime("%c"))
             print('Your commssion after 24hrs is', int(commission_roll))
             print(username,'congratulations your New Capital after 24hrs is:',int(total))
-        time.sleep(1*30)
+        time.sleep(1*15)
 
 percentage_increase()
 
